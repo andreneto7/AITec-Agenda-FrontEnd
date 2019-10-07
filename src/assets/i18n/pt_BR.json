@@ -1,0 +1,16 @@
+{
+	"LOGIN.ENTER": "Entrar",
+	"LOGIN.FORM_TITLE": "Entrar no sistema",
+	"LOGIN.PASSWORD_LABEL": "Senha",
+	"LOGIN.USERNAME_LABEL": "Usuario",
+	"REGISTER.EMAIL_LABEL":"E-amil",
+	"REGISTER.PHONE_LABEL":"Telefone",
+	"REGISTER.PASSWORD_LABEL":"Senha",
+	"REGISTER.PASSWORD_LABEL_AGAIN":"Repetir a senha",
+	"REGISTER.TITLE":"Registre-se",
+  "USER.REGISTER.TITLE":"Novo registro",
+	"REGISTER.BUTTON_SEND":"Enviar",
+	"BUTTON.SAVE":"Gravar",
+	"BUTTON.BACK":"Voltar",
+	"BUTTON.NEW":"Novo"
+}

@@ -1,0 +1,21 @@
+.container
+  .d-flex.justify-content-center.h-100
+    .card
+      .card-header
+        h3 Entrar
+      .card-body
+        form
+          .form-group
+            span {{ 'LOGIN.USERNAME_LABEL' | translate }}
+            input.form-control(type="text",placeholder="")
+          .form-group
+            span {{ 'LOGIN.PASSWORD_LABEL' | translate }}
+            input.form-control(type="password",placeholder="")
+          .form-group
+            button.btn.float-right Login
+      .card-footer
+        .d-flex.justify-content-center.links
+          span Crie uma conta
+        .d-flex.justify-content-center
+          span Esquenci a senha
+

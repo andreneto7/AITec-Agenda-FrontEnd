@@ -1,0 +1,21 @@
+.modal-header
+  h4.modal-title.pull-left Novo evento 2
+  button.close.pull-right((click)="bsModalRef.hide()")
+.modal-body
+  form([formGroup]="eventForm")
+    .form-group
+      input.form-control(placeholder="Titulo",formControlName="title")
+    .form-group
+      input.form-control(placeholder="Descricao",formControlName="description")
+    .form-group
+      input.form-control(placeholder="Data",formControlName="date")
+    .form-group
+      input.form-control(placeholder="Local",formControlName="local")
+    .form-group
+      button((click)="addParticipant()") Adicionar
+    .form-group(formArrayName="participant",*ngFor="let item of eventForm.get('participant').controls; let i = index;")
+      .participants([formGroupName]="i")
+        input.form-control(placeholder="Participante",formControlName="email")
+    button.btn.btn-default Criar evento
+.modal-footer
+    button.btn.btn-default((click)="bsModalRef.hide()") Criar

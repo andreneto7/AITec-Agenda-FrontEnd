@@ -1,0 +1,22 @@
+app-header
+.container-fluid(style="calc(height:100% - 57px)")
+  .row
+    h1 Agenda
+    fa-icon([icon]="faCoffee")
+  .row.border(style="height:calc(100% - 57px);overflow:hidden;")
+    .col-md-3.border-right
+      .row.border-bottom.p-3
+        select.form-control
+          option(value="") Agenda principal
+      .row.border-bottom.p-3
+        ul.list-group(style="width:100%;")
+          li.list-group-item.list-group-item-action
+            a(routerLink='dashboard') Dashboard
+          li.list-group-item.list-group-item-action
+            a(routerLink='calendar') Calendario
+      .row.p-3
+        h5 Filtrar
+        input.form-control('bsDatepicker'="bsDatepicker")
+        button.btn.btn-default((click)="newEvent()") Novo evento
+    .col-md-9(style="height:100%;overflow:auto;")
+      router-outlet

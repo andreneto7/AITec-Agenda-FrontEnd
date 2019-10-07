@@ -1,0 +1,31 @@
+
+<app-header></app-header>
+<div class="container-fluid" style="calc(height:100% - 57px)">
+  <div class="row">
+    <h1>Agenda</h1>
+    <fa-icon [icon]="faCoffee"></fa-icon>
+  </div>
+  <div class="row border" style="height:calc(100% - 57px);overflow:hidden;">
+    <div class="col-md-3 border-right">
+      <div class="row border-bottom p-3">
+        <select class="form-control">
+          <option value="">Agenda principal</option>
+        </select>
+      </div>
+      <div class="row border-bottom p-3">
+        <ul class="list-group" style="width:100%;">
+          <li class="list-group-item list-group-item-action"><a routerLink="dashboard">Dashboard</a></li>
+          <li class="list-group-item list-group-item-action"><a routerLink="calendar">Calendario</a></li>
+        </ul>
+      </div>
+      <div class="row p-3">
+        <h5>Filtrar</h5>
+        <input class="form-control" bsDatepicker="bsDatepicker"/>
+        <button class="btn btn-default" (click)="newEvent()">Novo evento</button>
+      </div>
+    </div>
+    <div class="col-md-9" style="height:100%;overflow:auto;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
